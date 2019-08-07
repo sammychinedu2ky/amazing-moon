@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: static/admin
 webhook_url: https://api.stackbit.com/project/5d4b14ff3386c4001007bd2c/webhook/forestry
 sections:
+- type: directory
+  path: ''
+  label: Thinkering
+  create: documents
+  match: "**/*"
+  templates:
+  - post
 - type: document
   path: site-metadata.json
   label: Global Site Config
